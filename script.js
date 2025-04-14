@@ -16,11 +16,9 @@ window.addEventListener('scroll', () => {
     const scrollText = document.getElementById('scrollText');
 
     if (scrollText) {
-        scrollText.style.transform = `translateX(${-scrollAmount / 2}px)`; // moves left as you scroll down
+        scrollText.style.transform = `translateX(${-scrollAmount / 2}px)`; 
     }
 });
-
-// Slow smooth scroll when clicking anchor links
 document.addEventListener("DOMContentLoaded", () => {
     const navigation = document.querySelector(".header"); 
     const navigationHeight = navigation.offsetHeight;
@@ -31,16 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function scrollToSection(id, offset = 0) {
-    const element = document.getElementById(id); // Get the target section
-    const yOffset = offset; // Adjust this to set how far you want the section to land from the top
-    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset; // Calculate the scroll position
+    const element = document.getElementById(id); 
+    const yOffset = offset; 
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset; 
 
     window.scrollTo({ top: y, behavior: 'smooth' });
 }
 
-document.querySelector('.skills-button').addEventListener('click', () => scrollToSection('SkillsSection', -100));  // Adjust landing 100px above the section
-document.querySelector('.aboutme-button').addEventListener('click', () => scrollToSection('AboutmeSection', -150)); // Adjust landing 150px above the section
-document.querySelector('.projects-button').addEventListener('click', () => scrollToSection('ProjectsSection', -200)); // Adjust landing 200px above the section
+document.querySelector('.skills-button').addEventListener('click', () => scrollToSection('SkillsSection', -100)); 
+document.querySelector('.aboutme-button').addEventListener('click', () => scrollToSection('AboutmeSection', -150)); 
+document.querySelector('.projects-button').addEventListener('click', () => scrollToSection('ProjectsSection', -200));
 function sendMessage() {
     const email = document.getElementById('email');
     const message = document.getElementById('message');
@@ -50,10 +48,9 @@ function sendMessage() {
         return;
     }
 
-    // For now we just show a success message
+
     alert('Message sent!');
 
-    // Clear fields after sending
     email.value = '';
     message.value = '';
 }
