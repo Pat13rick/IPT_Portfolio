@@ -343,7 +343,7 @@ body {
 }
 .Aboutmedivider {
     display: flex;
-    flex-direction: row; /* Default, but just to be clear */
+    flex-direction: row; 
     width: 100%;
 }
 
@@ -567,8 +567,8 @@ body {
 
 .send-button {
     display: flex;
-    justify-content: flex-end; /* Aligns the button to the right */
-    margin-top: 0px; /* Optional spacing from input fields */
+    justify-content: flex-end; 
+    margin-top: 0px; 
 }
 .send-button button {
     padding: 12px 20px;
@@ -589,7 +589,7 @@ body {
 }
 
 .bottombox {
-    width: 100%; /* or width: 100vw; to make it fill the viewport width */
+    width: 100%; 
     background-color: rgb(255, 254, 254);
     color: rgb(246, 237, 237);
     height: 40px;
@@ -597,9 +597,9 @@ body {
     display: flex;
     justify-items: center;
     align-items: center;
-    justify-content: center; /* Aligns content to the left */
-    margin: -45px 0 0 0; /* Ensure there's no margin */
-    padding: 0; /* Ensure no padding */
+    justify-content: center; 
+    margin: -45px 0 0 0; 
+    padding: 0; 
 }
 
 
