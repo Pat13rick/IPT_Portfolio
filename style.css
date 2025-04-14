@@ -1,0 +1,740 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('aurora.gif') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.faded-box {
+    height: 0px;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(0, 0, 0);
+    padding: 80px 20px;
+    margin-top: 612px;
+    width: 100%;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+    -webkit-mask-image: linear-gradient(to bottom, transparent, black 30%);
+    mask-image: linear-gradient(to bottom, transparent, black 30%);
+}
+
+.landingpagecontent {
+    max-width: 1400px;
+    z-index: 10;
+    margin: 40px 80px;
+    padding: 40px;
+    height: 430px;
+    background-color: #f9f9f9;
+    border: 5px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.flexcontainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.imagebox {
+    width: 100%;
+    max-width: 400px;
+    border-bottom: 200px;
+}
+
+.imagebox img {
+    width: 100%;
+    height: auto;
+    border-bottom: 100px;
+    object-fit: cover;
+}
+
+.desc {
+    flex: 1;
+}
+
+.description {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 100px;
+}
+
+.description p {
+    font-size: 25px;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    border-bottom: 5px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+}
+
+.header .profile {
+    font-family: 'Arial', sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.scrollbuttons {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.scrollbuttons li a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    position: relative;
+    display: inline-block;
+    transition: all 1s ease-in-out;
+}
+
+.scrollbuttons li a:hover {
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.theme-btn {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+.music-btn {
+    background-color: #fff;
+    border: none;
+    font-size: 20px;
+}
+
+.skillssection {
+    margin-top: 0px;
+}
+
+#SkillsSection {
+    scroll-margin-top: 80px;
+}
+.sssection a {
+    text-decoration: none;
+}
+.container {
+    margin-top: 180px;
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    overflow: visible;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: auto;
+    z-index: 300;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box {
+    border-radius: 20px;
+    height: 60px;
+    width: 400px;
+    position: relative;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.box:hover {
+    height: 80px;
+    z-index: 2;
+    border: 8px bold black;
+}
+
+.left-section .box:not(:hover) {
+    height: 40px;
+    border: 4px bold black;
+
+}
+
+.right-section {
+    display: flex;
+    z-index: 300;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 350px;
+}
+
+.video-box {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    border: 4px solid white;
+    height: 330px;
+    width: 500px;
+}
+
+.undervideo {
+    margin-top: -70px;
+    text-align: center;
+}
+
+.undervideo p {
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 0px;
+}
+
+.skillsbox {
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    margin: 0px;
+    margin-top: 180px;
+}
+
+.skillcontainer {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 0;
+    position: relative;
+    top: 20px;
+}
+
+#scrollText {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+    padding-left: 20px;
+    transition: transform 0.1s ease-out;
+}
+
+.music-toggle {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+    padding: 2px;
+    gap: 2px;
+}
+
+.bar {
+    width: 8px;
+    height: 100%;
+    background: #333;
+    border-radius: 2px;
+    transition: background 0.3s ease;
+}
+
+.music-toggle.playing .bar1 {
+    animation: bounceDrop 3s ease-in-out infinite;
+}
+
+.music-toggle.playing .bar2 {
+    animation: bounceDrop 5s ease-in-out infinite 0.6s;
+}
+
+.music-toggle.playing .bar3 {
+    animation: bounceDrop 3s ease-in-out infinite 0.3s;
+}
+
+@keyframes bounceDrop {
+    0% {
+        height: 20%;
+    }
+    20% {
+        height: 100%;
+    }
+    60% {
+        height: 30%;
+    }
+    100% {
+        height: 20%;
+    }
+}
+
+.music-toggle.playing {
+    filter: none;
+}
+
+.aboutme-section {
+    background-color: white;
+    color: black;
+    padding: 190px 80px;
+    height: 310px;
+    text-align: left;
+    scroll-margin-top: 80px;
+}
+.aboutme-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 500px;
+    margin-top: -80px;
+}
+.Aboutmedivider {
+    display: flex;
+    flex-direction: row; /* Default, but just to be clear */
+    width: 100%;
+}
+
+.AboutLeft {
+    width: 50%;
+    box-sizing: border-box;
+}
+.A {
+    display: flex;
+}
+.A p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+.B {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+.B p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.C {
+    display: flex;
+}
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #000000, #444444);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.download-btn:hover {
+    background: linear-gradient(to right, #444444, #000000);
+    color: #ffffff;
+    border-color: #66cfff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+.AboutRight {
+    width: 50%;
+    box-sizing: border-box;
+}
+.D {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.D p {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: right;
+    margin: 0;
+    margin-top: 0px;
+}
+.E {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 20px;
+    border: 8px solid black;
+}
+.map-border-wrapper {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.map-placeholder {
+    width: 100%;
+    height: 350px;
+    background-color: #eee;
+    border: 2px dashed #999;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.map-placeholder iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+.map-placeholder p {
+    color: #555;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+.contact-section {
+    background-color: rgb(0, 0, 0);
+    color: rgb(246, 237, 237);
+    padding: 190px 80px;
+    height: 310px;
+    text-align: left;
+    scroll-margin-top: 80px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    height: 400px;
+    flex-wrap: wrap;
+    margin-top: -40px;
+}
+.kaliwa {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.kanan {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 80px;
+}
+.kaliwa, .kanan {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.Contactmetext p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    color: #fff;
+}
+
+.Contactdesc p {
+    font-size: 1.1rem;
+    margin: 0 0 40px 0;
+    color: #ccc;
+}
+.socialmeadia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list li {
+    margin-bottom: 12px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 18px;
+    border-radius: 8px;
+    width: 200px;
+    border: 1px solid black;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-button i {
+    font-size: 1.2rem;
+}
+
+.social-button:hover {
+    background-color: #000000;
+    color: white;
+    transform: translateX(5px);
+    border: 1px solid white;
+}
+
+
+.email-box input,
+.message-box textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.email-box input:focus,
+.message-box textarea:focus {
+    outline: none;
+    border-color: rgb(0, 0, 0);
+}
+
+.message-box textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.send-button {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 0px; /* Optional spacing from input fields */
+}
+.send-button button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.bottombox {
+    width: 100%; /* or width: 100vw; to make it fill the viewport width */
+    background-color: rgb(255, 254, 254);
+    color: rgb(246, 237, 237);
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: center; /* Aligns content to the left */
+    margin: -45px 0 0 0; /* Ensure there's no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+#SkillsSection, #AboutmeSection, #ContactSection {
+    scroll-margin-top: 80px;
+}
+#Skill1 .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+}
+#Skill1:hover .hidden-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+#Skill1 span {
+    transition: opacity 0.3s ease;
+}
+#Skill1:hover span {
+    opacity: 0; /* Hides the text when hovered */
+}
+#Skill2 .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+}
+#Skill2:hover .hidden-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+#Skill2 span {
+    transition: opacity 0.3s ease;
+}
+#Skill2:hover span {
+    opacity: 0; /* Hides the text when hovered */
+}
+#Skill3 .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+}
+#Skill3:hover .hidden-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+#Skill3 span {
+    transition: opacity 0.3s ease;
+}
+#Skill3:hover span {
+    opacity: 0; /* Hides the text when hovered */
+}
+#Skill4 .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+}
+#Skill4:hover .hidden-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+#Skill4 span {
+    transition: opacity 0.3s ease;
+}
+#Skill4:hover span {
+    opacity: 0; /* Hides the text when hovered */
+}
+#Skill5 .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    width: 90%;
+}
+#Skill5:hover .hidden-text {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+#Skill5 span {
+    transition: opacity 0.3s ease;
+}
+#Skill5:hover span {
+    opacity: 0; /* Hides the text when hovered */
+}

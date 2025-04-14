@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="radial-pulse"></div>
+
+    <div class="header">
+        <div class="header-left">
+            <div class="logo">
+                <img src="pd.png" alt="lugu"/>
+            </div>
+      
+            <div class="profile">Portfolio</div>
+        </div>
+
+        <div class="header-right">
+            <ul class="scrollbuttons">
+                <li><a href="#SkillsSection">Skills and Projects</a></li>
+                <li><a href="#AboutmeSection">About Me</a></li>
+                <li><a href="#ContactSection">Contact</a></li>
+            </ul>
+            
+            <div class="ThemeToggle">
+                <div class="music-toggle" onclick="toggleMusic()" id="musicButton">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faded-box">
+        <p>This box fades at the top and contains your skills or projects.</p>
+    </div>
+    <div class="landingpagecontent">
+        <div class="flexcontainer">
+            <div class="picture">
+                <div class="imagebox">
+                    <img src="damn.jpg" alt="img" style="border-radius: 10px;" />
+                </div>
+            </div>
+            <div class="desc">
+                <div class="description">
+                    <p style="font-weight: bold; font-family: 'Special Gothic Condensed One', sans-serif; font-size: 50px;">
+                        I am De La Paz, Patrick D.
+                    </p>                      
+                    <p>I specialize in wireframing and designing interactive functions, always thinking about how animation and interaction come together. I'm detail-obsessed, love making things that move, and I’m always learning new techniques to improve my craft.</p>
+                    <p></p> 
+                    <p>Scroll down to learn more about me and my projects!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section id="SkillsSection" class="skillssection">
+        <div class="skillsbox">
+            <div class="skillcontainer">
+                <p id="scrollText">• SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS • SKILLS AND PROJECTS •</p>
+            </div>
+                <div class="container">
+                    <div class="left-section">
+                        <div class="box" id="Skill1">
+                            <span>Animator</span>
+                            <div class="hidden-text">Web animations for interactive experience</div>
+                          </div>
+                          <div class="box" id="Skill2">
+                            <span>Wireframing</span>
+                            <div class="hidden-text">Structuring layouts for intuitive content</div>
+                          </div>
+                          <div class="box" id="Skill3">
+                            <span>UI/UX Design</span>
+                            <div class="hidden-text">Creating visually appealing interfaces</div>
+                          </div>
+                          <div class="box" id="Skill4">
+                            <span>Prototyping Skills</span>
+                            <div class="hidden-text">Applying transitions for realistic previews</div>
+                          </div>
+                          <div class="box" id="Skill5">
+                            <span>Interactive Design</span>
+                            <div class="hidden-text">Engaging user interactions</div>
+                          </div>
+                    </div>
+              
+                    <div class="right-section">
+                        <div class="sssection">
+                            <a href="https://www.figma.com/proto/9Kc6F6aHS3umdGcV80xc54/STS-PROJ?node-id=324-189&starting-point-node-id=324%3A189" target="_blank" class="video-link" title="Visit">
+                                <div class="video-box">
+                                    <video src="sts.mp4" autoplay muted loop playsinline style="width:100%; border-radius: 12px; pointer-events: none;">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="undervideo">
+                                    <p>Recent Project & Design</p>
+                                </div>
+                            </a>
+                        </div>                        
+                    </div>
+                </div>
+            </div>                
+    </section>
+    
+    <section id="AboutmeSection" class="aboutme-section">
+        <div class="aboutme-container">
+        <div class="Aboutmedivider">
+            <div class="AboutLeft">
+                <div class="A">
+                    <p>
+                    Know more about me
+                    </p>
+                </div>
+                <div class="B">
+                    <p>
+
+                    </p>
+                    <p>
+                        I am a passionate and detail-oriented developer with a strong interest in interactive design,
+                        animation, and UI/UX. With experience in both front-end and back-end development, I love crafting
+                        smooth, user-friendly interfaces and bringing creative ideas to life. Currently pursuing BSIT with
+                        a focus on Software Development, aiming to merge strong coding with creative design.
+                    </p>
+                    <p>
+                        Want to know more?, Download a copy of My Curriculum Vitae below!
+                    </p>
+                </div>
+                
+                <div class="C">
+                    <a href="Resume.pdf" download class="download-btn">Download CV</a>
+                </div>
+                
+            </div>
+            <div class="AboutRight">
+                <div class="D">
+                <p>
+                    My Home Address
+                </p>
+                <p>
+                    Santisimo Rosario, San Pablo City Laguna
+                </p>
+            
+                </div>
+                <div class="E">
+                    <div class="map-border-wrapper">
+                        <div class="map-placeholder">
+                          <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1012.3760492237265!2d121.3127606143087!3d13.993161416459463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1744613245444!5m2!1sen!2sph" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                          </iframe>
+                        </div>
+                    </div>                      
+                </div>                             
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="ContactSection" class="contact-section">
+        <div class="contact-container">
+          <div class="kaliwa">
+            <div class="Contactmetext">
+              <p>Contact Me!</p>
+            </div>
+            <div class="Contactdesc">
+              <p>Feel free to contact me or send me an email</p>
+            </div>
+            <div class="socialmeadia">
+                <ul class="social-list">
+                  <li>
+                    <a href="https://www.facebook.com/patrick.delapaz.359" target="_blank" class="social-button">
+                      <i class="fab fa-facebook-f"></i> Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/delapaz.patrick/" target="_blank" class="social-button">
+                      <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://discordapp.com/users/714662248018345986" target="_blank" class="social-button">
+                      <i class="fab fa-discord"></i> Discord
+                    </a>
+                  </li>
+                </ul>
+              </div>
+                            
+          </div>
+      
+          <div class="kanan">
+            <div class="email-box">
+              <input type="email" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="message-box">
+              <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <div class="send-button">
+              <button type="button" onclick="sendMessage()">Send Message</button>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      
+      <div class="bottombox">
+        <div class="year" style="color: black;">2025 @ De La Paz, Patrick D.</div>
+    </div>
+    <audio id="background-music" autoplay loop src="MUSICCC.mp3">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
